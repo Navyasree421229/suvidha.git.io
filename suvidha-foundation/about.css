@@ -107,7 +107,6 @@ body{
   }
 /* header */
 header{
-    border: 5px solid blue;
     height: 20vw;
     width: 100%;
     margin: auto;
@@ -175,7 +174,7 @@ header{
     width: 100%;
     /* border: 1px solid black; */
     background-color: #FFEBB9;
-    margin-top: -20%;
+    margin-top: -25%;
     z-index: -1;
     display: flex;
     flex-direction: column;
@@ -196,6 +195,7 @@ header{
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 12%;
 }
 
 .rect-title{
@@ -222,9 +222,9 @@ header{
 
 /* supporter */
 .bottom-row{
-    margin-left: 10%;
-    position: relative;
-    bottom: 60px;
+    margin-left:auto;
+    margin-right: auto;
+    
 }
 
 .upes{
@@ -437,25 +437,27 @@ header{
 
 /* cta */
 .cta{
-    height: 384px;
-    width: 1280px;
+    height: 40vw;
+    width: 85%;
     border-radius: 20px;
     margin: 0 auto;
     margin-top: 80px;
     margin-bottom: 60px;
     zoom: 80%;
+    object-fit: cover;
 }
 
 .volunteer{
-    height: 384px;
-    width: 1280px;
+    
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     object-fit: cover;
     opacity: 0.5;
 }
 
 .volunteer h1{
-    font-size: 48px;
+    font-size: 4vw;
 }
 
 .buttons{
@@ -465,14 +467,13 @@ header{
 }
 
 .contribute{
-    margin: 0 auto;
+    margin: auto;
     width: 805px;
     height: 199px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 80px;
 }
 
 /* footer */
@@ -751,11 +752,18 @@ footer{
     }
 }
 @media screen and (max-width: 750px) {
+    html,body{
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        overflow-x:hidden;
+    }
     header{
         position: relative;
         top:4vh;
-        height: 70%;
-        width: 90vh;
+        height: 50vh;
+        width: 100%;
         margin-top: 20%;
         margin-bottom: 5%;
         margin-left: 0;
@@ -827,13 +835,97 @@ footer{
 
     
 }
+@media screen and (max-width: 615px){
+    /* our-journey-section */
+.statsSection{
+    height: 200vw;
+    width: 100%;
+    margin-bottom: 5%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content{
+    height: 80vw;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 25%;
+}
+
+.statsSection p{
+    color: rgb(153,153,153);
+}
+
+.statsSection section{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.labels {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Set three columns for the first row */
+    grid-auto-columns: 1fr; /* Distribute remaining space equally */
+    grid-gap: 20px; /* Set gap between grid items */
+    margin-top: 10%;
+}
+
+.label {
+    width: 100%; /* Ensure labels take full width of grid item */
+}
+
+.label > div {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align:text-top;
+}
+
+.label > span {
+    vertical-align: middle;
+    color: white; /* Set text color */
+}
+
+}
 @media screen and (max-width: 500px) {
+    html,body{
+        width:100%;
+        height:100%;
+        padding:0;
+        margin:0;
+        overflow-x:hidden;
+    }
+    header{
+        position: relative;
+        top:4vh;
+        height: 55%;
+        width: 100%;
+        margin-top: 20%;
+        margin-bottom: 5%;
+        margin-left: 0;
+    }
+    
+    .justified-text{
+        color: #1D2130;
+        font-size: 2vh;
+        /* line-height: 160%; */
+        width: 90%;
+        text-align: justify;
+        opacity: 60%;
+    }    
+    .about{
+        margin-left: 60px;
+        display: block;
+        justify-content: space-around;
+    }
     .award-section{
         width: 100%;
-        height: 110vw;
-        margin: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -841,20 +933,29 @@ footer{
     
     .award-section .title{
        text-align: center;
-       font-size: 6vw;
+       font-size: 4vh;
        font-weight: bold;
     }
     
     .awards-row{
-        height: 199px;
+        max-height: 199px;
+        width:100%;
+        margin-left: 0;
         display: flex;
         flex-direction: column;
-        margin-bottom: 60%;
+        position: relative;
+        bottom:30vh
     }
     
     .award{
         height: 199px;
         width: 120px;
+    }
+    .award1,.award3{
+        margin-left: 20vw;
+    }
+    .award2,.award4{
+        margin-left: 20vw;
     }
     .aw1 {
         display: flex;
@@ -920,6 +1021,19 @@ footer{
         margin-left: 20px;
         
     }
+    .card-title{
+        font-size: 3vh;
+    }
+    .contribute{
+        width: 100%;
+        height: 199px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
 }
 @media (max-width: 767px) {
   .testimonial2 .testi2 .owl-dots {
