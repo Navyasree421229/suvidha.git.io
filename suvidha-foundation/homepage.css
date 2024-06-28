@@ -179,7 +179,7 @@ a {
 
 video{
     margin-left: 80px;
-    height: 50vw;
+    height: 35vw;
     width: 48vw;
     border-radius: 10px;
 }
@@ -198,7 +198,7 @@ video{
 
 
 .weDo{
-  min-height: 674px;
+  height: 1000px;
   width: 100%;
   /* border: 1px solid black; */
   background-color:  #FFEBB9;
